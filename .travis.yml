@@ -1,12 +1,9 @@
 services: docker
-
 env:
   global:
-    - VM_DIR: /vagrant
-
+  - secure: hnz8jiT8b0RTI5Kz1r6Z8cocghFTAAyfIPo6fj89Ii/mKhDnfEk5ubreJf7n11W7Ocd1XOaknLWF8XeUa75ks8e5wJQBgM881PygW1zLM8k8xTbUImi38eRv44Kr/Og+YmUuVTDrCmT5FcrJgFCdH3YHkg/ODYFQ8iDLxKUTeFj6UrONoo1709lsNm9HbxrkXAz2FAS2GsVxbReRD4HzW4X3A3HewZUZ/zw3yxvX+YY+1CbbLZjpH57Wla7kC1Aymda1Nfzhs/RVYtshmD5SZO8TPpV7inrD0OjtfLUPD6K7PE8MNupMgd2RXd+mlPxwhAkigSqqp7EZxOAtyTIS5kKGGKBKMILgYpeFo8qC3LuQPQSauqcJ2rlPlIZ3JrI1OA/Gsj5A8/Omjp/F86D/pYdp2XHZZ1Cy4J/qJQ866D9xKwCI+CAV6c8lhtt8fDuPpHju6I6UThxEPyyXYFPHQxcMyWeKZVb4hZk7Aoa2sFEdMydCICjfk7sX8yG25NwPvLxoqhUq3S0BJKRqdfJvu2n4b3oXyLVEk1mowVHFSDh4s+R2tpU9d5PmgZMDGiubS2jhCGFSlix+0o1G6mp8FAgVk5M65JDERpBuGYDZZktaCaxDVYrDT2We/pPOL3FzZ9oKg8wbvqkl1yNjiEnEyNy5UPVe392EHNOegQ7G15A=
 before_install:
-  - bundle install --path vendor/bundle
-  - bash bin/build.sh
-
+- bundle install --path vendor/bundle
+- bash bin/build.sh
 script:
-  - bundle exec rake spec
+- bundle exec rake spec
