@@ -39,9 +39,5 @@ EOL
 
 chmod 755 $HOME/.phpenv/versions/5.2.17/bin/phpunit
 
-phpenv install 5.3.29
-phpenv install 5.4.45
-phpenv install 5.5.38
-phpenv install 5.6.31
-phpenv install 7.0.23
+
 phpenv install 7.1.9
