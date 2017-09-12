@@ -1,0 +1,12 @@
+services: docker
+
+env:
+  global:
+    - VM_DIR: /vagrant
+
+before_install:
+  - bundle install --path vendor/bundle
+  - bash bin/build.sh
+
+script:
+  - bundle exec rake spec
