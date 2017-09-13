@@ -2,6 +2,13 @@
 
 [![Build Status](https://travis-ci.org/miya0001/docker-phpenv.svg?branch=master)](https://travis-ci.org/miya0001/docker-phpenv)
 
+## How to use
+
+```
+docker pull miya0001/phpenv
+```
+
+
 ## How to switch PHP version
 
 ```
