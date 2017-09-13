@@ -16,8 +16,7 @@ export PATH="$HOME/.phpenv/bin:$PATH"
 eval "$(phpenv init -)"
 
 # Installs plugins for phpenv
-git clone git://github.com/CHH/php-build.git "$(phpenv root)/plugins/php-build"
-git clone https://github.com/rogeriopradoj/phpenv-common-deps-install.git "$(phpenv root)/plugins/phpenv-common-deps-install"
+curl -L http://git.io/phpenv-installer | bash
 git clone https://github.com/ngyuki/phpenv-composer.git "$(phpenv root)/plugins/phpenv-composer"
 
 phpenv rehash
