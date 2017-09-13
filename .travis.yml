@@ -5,6 +5,6 @@ env:
 before_install:
 - bundle install --path vendor/bundle
 - bash bin/build.sh
-script:
 - travis_wait docker exec -it -u ubuntu phpenv bash /shared/bin/php-install.sh
+script:
 - bundle exec rake spec
