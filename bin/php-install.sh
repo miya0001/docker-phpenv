@@ -3,7 +3,7 @@
 set -ex
 
 # Builds and installs PHP 5.2
-phpenv install 5.2.17 | pv
+phpenv install 5.2.17
 phpenv global 5.2.17
 
 # Builds phpunit v3.6 for PHP 5.2
@@ -39,5 +39,6 @@ EOL
 
 chmod 755 $HOME/.phpenv/versions/5.2.17/bin/phpunit
 
-
-phpenv install 7.1.9 | pv
+phpenv install 7.1.9
+phpenv global 7.1.9
+composer global require phpunit/phpunit

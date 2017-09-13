@@ -26,3 +26,17 @@ describe command('eval "$(phpenv init -)" && php --version') do
   its(:exit_status) { should eq 0 }
   its(:stdout){ should match /7.1.9/ }
 end
+
+describe command('eval "$(phpenv init -)" && phpunit --version') do
+  its(:exit_status) { should eq 0 }
+  its(:stdout){ should match /PHPUnit 6/ }
+end
+
+describe command('eval "$(phpenv init -)" && phpenv global 5.2.17') do
+  its(:exit_status) { should eq 0 }
+end
+
+describe command('eval "$(phpenv init -)" && phpunit --version') do
+  its(:exit_status) { should eq 2 }
+  its(:stdout){ should match /PHPUnit @package_version@ by Sebastian Bergmann./ }
+end
