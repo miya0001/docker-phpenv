@@ -8,6 +8,6 @@ if [[ "false" != "$TRAVIS_PULL_REQUEST" ]]; then
 	exit
 fi
 
-if [[ $TRAVIS_TAG ]]; then
+if [[ "$TRAVIS_TAG" ]]; then
   docker push miya0001/phpenv:$TRAVIS_TAG
 fi
