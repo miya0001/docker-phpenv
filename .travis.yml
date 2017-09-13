@@ -6,6 +6,6 @@ before_install:
 - bundle install --path vendor/bundle
 - bash bin/build.sh
 - docker exec -u ubuntu phpenv bash -lc "bash /shared/bin/php52-install.sh"
-- docker exec -u ubuntu phpenv bash -lc "bash /shared/bin/php71-install.sh"
+- docker exec -u ubuntu phpenv bash -lc "bash /shared/bin/php53-install.sh"
 script:
 - bundle exec rake spec
