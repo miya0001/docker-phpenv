@@ -9,3 +9,5 @@ before_install:
 - docker exec -u ubuntu phpenv bash -lc "bash /shared/bin/php53-install.sh"
 script:
 - bundle exec rake spec
+after_script:
+- bash bin/deploy.sh
