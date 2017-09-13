@@ -3,7 +3,7 @@
 set -ex
 
 # Builds and installs PHP 5.2
-phpenv install 5.2.17
+pv | phpenv install 5.2.17
 phpenv global 5.2.17
 phpenv rehash
 
