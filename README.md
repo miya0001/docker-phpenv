@@ -16,5 +16,6 @@ $ git clone https://github.com/miya0001/docker-phpenv
 $ cd docker-phpenv
 $ bash bin/build.sh
 $ bundle install --path=vendor/bundle
+$ docker exec -u ubuntu phpenv bash -lc /shared/bin/php-install.sh
 $ bundle exec rake spec
 ```
