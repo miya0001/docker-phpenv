@@ -39,8 +39,3 @@ php -d include_path='.:/usr/local/src/phpunit/phpunit/:/usr/local/src/phpunit/db
 EOL
 
 chmod 755 $HOME/.phpenv/versions/5.2.17/bin/phpunit
-
-phpenv install 7.1.9
-phpenv global 7.1.9
-phpenv rehash
-composer global require phpunit/phpunit
