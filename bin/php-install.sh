@@ -5,6 +5,7 @@ set -ex
 # Builds and installs PHP 5.2
 phpenv install 5.2.17
 phpenv global 5.2.17
+phpenv rehash
 
 # Builds phpunit v3.6 for PHP 5.2
 # See https://github.com/sebastianbergmann/phpunit/tree/3.5#using-phpunit-from-a-git-checkout
@@ -41,4 +42,5 @@ chmod 755 $HOME/.phpenv/versions/5.2.17/bin/phpunit
 
 phpenv install 7.1.9
 phpenv global 7.1.9
+phpenv rehash
 composer global require phpunit/phpunit
