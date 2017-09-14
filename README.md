@@ -8,6 +8,11 @@
 docker pull miya0001/phpenv
 ```
 
+Or
+
+```
+docker pull miya0001/phpenv:<PHP_VERSION>
+```
 
 ## How to switch PHP version
 
@@ -21,6 +26,7 @@ $ phpenv global 7.1.9
 ```
 $ git clone https://github.com/miya0001/docker-phpenv
 $ cd docker-phpenv
+$ export PHP_VERSION=5.2
 $ bash bin/build.sh
 $ bundle install --path=vendor/bundle
 $ docker exec -u ubuntu phpenv bash -lc "bash /shared/bin/php-5.2-install.sh"
