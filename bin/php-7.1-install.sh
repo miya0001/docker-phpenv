@@ -8,7 +8,7 @@ export PHP_BUILD_XDEBUG_ENABLE=off
 export PATH="$HOME/.phpenv/bin:$PATH"
 eval "$(phpenv init -)"
 
-pv | phpenv install 7.1.9
+phpenv install 7.1.9 | pv
 phpenv global 7.1.9
 phpenv rehash
 composer global require phpunit/phpunit

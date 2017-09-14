@@ -6,7 +6,7 @@ MYSQL_PASS=1111
 
 sudo apt-get update -y
 
-sudo apt-get install -y git build-essential jq subversion curl libxml2-dev libssl-dev libsslcommon2-dev libcurl4-openssl-dev libbz2-dev libpng-dev libmysqlclient-dev libltdl-dev libtidy-dev libxslt-dev libicu-dev autoconf pv bison
+sudo apt-get install -y git build-essential jq subversion curl libxml2-dev libssl-dev libsslcommon2-dev libcurl4-openssl-dev libbz2-dev libpng-dev libmysqlclient-dev libltdl-dev libtidy-dev libxslt-dev libicu-dev autoconf bison pv
 
 # Install MySQL
 echo "mysql-server mysql-server/root_password password $MYSQL_PASS" | sudo debconf-set-selections
