@@ -13,7 +13,6 @@ env:
 before_install:
 - bundle install --path vendor/bundle
 - bash bin/build.sh
-- travis_retry docker exec -u ubuntu phpenv bash -lc "bash /shared/bin/php-${PHP_VERSION}-install.sh"
 script:
 - bundle exec rake spec
 after_script:

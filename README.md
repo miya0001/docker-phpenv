@@ -29,6 +29,5 @@ $ cd docker-phpenv
 $ export PHP_VERSION=5.2
 $ bash bin/build.sh
 $ bundle install --path=vendor/bundle
-$ docker exec -u ubuntu phpenv bash -lc "bash /shared/bin/php-5.2-install.sh"
 $ bundle exec rake spec
 ```

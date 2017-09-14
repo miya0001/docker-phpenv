@@ -6,6 +6,7 @@ end
 
 describe command('eval "$(phpenv init -)" && php --version') do
   its(:exit_status) { should eq 0 }
+  its(:stdout) { should match /#{ENV['PHP_VERSION']}/ }
 end
 
 describe command('eval "$(phpenv init -)" && phpunit --version') do
