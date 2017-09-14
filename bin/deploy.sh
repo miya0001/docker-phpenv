@@ -9,5 +9,5 @@ if [[ "false" != "$TRAVIS_PULL_REQUEST" ]]; then
 fi
 
 if [[ "$TRAVIS_TAG" ]]; then
-  docker push miya0001/phpenv
+  docker push miya0001/phpenv:${PHP_VERSION}
 fi
