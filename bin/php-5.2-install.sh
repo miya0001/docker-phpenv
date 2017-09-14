@@ -2,11 +2,14 @@
 
 set -ex
 
+# Disable Xdebug
+export PHP_BUILD_XDEBUG_ENABLE=off
+
 export PATH="$HOME/.phpenv/bin:$PATH"
 eval "$(phpenv init -)"
 
 # Builds and installs PHP 5.2
-phpenv install 5.2.17 | pv
+phpenv install 5.2.17
 phpenv global 5.2.17
 phpenv rehash
 

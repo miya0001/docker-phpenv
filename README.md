@@ -23,7 +23,6 @@ $ git clone https://github.com/miya0001/docker-phpenv
 $ cd docker-phpenv
 $ bash bin/build.sh
 $ bundle install --path=vendor/bundle
-$ docker exec -u ubuntu phpenv bash -lc "bash /shared/bin/php52-install.sh"
-$ docker exec -u ubuntu phpenv bash -lc "bash /shared/bin/php53-install.sh"
+$ docker exec -u ubuntu phpenv bash -lc "bash /shared/bin/php-5.2-install.sh"
 $ bundle exec rake spec
 ```
