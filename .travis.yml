@@ -15,5 +15,5 @@ before_install:
 - travis_wait 30 bash bin/build.sh
 script:
 - bundle exec rake spec
-after_script:
+after_success:
 - bash bin/deploy.sh
