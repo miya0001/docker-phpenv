@@ -29,9 +29,6 @@ git clone https://github.com/ngyuki/phpenv-composer.git "$(phpenv root)/plugins/
 
 phpenv rehash
 
-# Disable Xdebug
-chmod 600 $(phpenv root)/plugins/php-build/share/php-build/plugins.d/xdebug.sh
-
 # Installs dependencies for PHP
 phpenv common-deps-install-ubuntu-14-04
 
